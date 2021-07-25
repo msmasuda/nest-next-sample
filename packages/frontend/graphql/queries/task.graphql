@@ -1,0 +1,20 @@
+query tasks {
+  tasks {
+    id
+    title
+    createdAt
+    updatedAt
+    taskContents {
+      id
+      checked
+      title
+      createdAt
+      updatedAt
+    }
+    categories {
+      id
+      name
+      color
+    }
+  }
+}

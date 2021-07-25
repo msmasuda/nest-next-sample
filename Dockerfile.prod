@@ -1,0 +1,10 @@
+FROM node:14-alpine
+
+WORKDIR /app
+COPY . .
+
+WORKDIR /app/packages/backend
+RUN yarn install
+RUN yarn build
+
+CMD yarn start:prod
